@@ -1,0 +1,17 @@
+awesome-slugify==1.6.5
+certifi==2018.4.16
+chardet==3.0.4
+Django==1.10.1
+django-braces==1.13.0
+django-password-reset==1.0
+idna==2.7
+Markdown==2.6.11
+Pillow==5.1.0
+pysolr==3.7.0
+pytz==2018.4
+redis==2.10.6
+regex==2018.6.21
+requests==2.19.1
+sorl-thumbnail==12.4.1
+Unidecode==0.4.21
+urllib3==1.23

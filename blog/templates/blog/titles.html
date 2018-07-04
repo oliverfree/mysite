@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+{% extends "base.html" %}
+{% block title %}blog titles{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+
+    <h1>我的博客</h1>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+        <ul>
+            {% for blog in blogs %}
+            <li><a href={{ blog.id }}>{{ blog.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="col-xs-6 col-md-4">
+        <h2>Advertisement</h2>
+        <p>www.xxx.com</p>
+        <img width="200px"
+             src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1529548658&di=58ead74a9547cd658d6bad96fe2ac11a&src=http://img4.duitang.com/uploads/item/201201/20/20120120211303_sjxSJ.thumb.700_0.jpg">
+    </div>
+
+</div>
+{% endblock %}
+
+</body>
+</html>
