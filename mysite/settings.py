@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 't42(3l3*!d$mh*4w-71jty+@07_e!3q-4+#3%0h2$y77*uamm0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.doraemon.red']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -127,11 +127,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'downloads')
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'downloads'),
+    os.path.join(BASE_DIR, 'static'),
 )
+
 
 STATICFILES_FINDERS = (
     "django.contrib.staticfiles.finders.FileSystemFinder",
