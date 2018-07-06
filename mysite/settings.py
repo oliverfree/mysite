@@ -26,7 +26,7 @@ SECRET_KEY = 't42(3l3*!d$mh*4w-71jty+@07_e!3q-4+#3%0h2$y77*uamm0'
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.doraemon.red']
-
+# ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -127,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'downloads')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
