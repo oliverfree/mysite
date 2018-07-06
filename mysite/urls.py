@@ -19,7 +19,7 @@ from blog import views
 from django.views.generic import TemplateView
 from django.conf import settings
 from django.conf.urls.static import static
-# admin.autodiscover()
+from django.conf import settings
 
 
 urlpatterns = [
@@ -35,3 +35,7 @@ urlpatterns = [
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    urlpatterns += urlpatterns("", url(r"^media/(?P<path>.*)$", "django.views.static.serve",
+                                       {"document_root": settings.MEDIA_ROOT, }), )
