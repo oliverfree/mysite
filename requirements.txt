@@ -14,4 +14,4 @@ regex==2018.6.21
 requests==2.19.1
 sorl-thumbnail==12.4.1
 Unidecode==0.4.21
-urllib3==1.23
+urllib3==1.24.2
